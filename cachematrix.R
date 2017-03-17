@@ -24,12 +24,11 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-
 ## Like cachemean, cacheSolve uses the functions and variables defined by their repespective "make" function to 
 ## perform a mathematical operation on the input of the "make" function. As input, both functions require an object
 ## which is a list of functions that have access to previously stored input variables. Before executing 
 ## operation, both functions check whether the operation has been performed before and return the chached answer
-## from memory when applicable. In contrast to cachemean, cacheSolve does not cumpute a mean, but inverts a matrix
+## from memory when applicable. In contrast to cachemean, cacheSolve does not compute a mean, but inverts a matrix
 ## and returns the result to the console.
 
 cacheSolve <- function(x, ...) {
